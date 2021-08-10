@@ -1,4 +1,4 @@
-import 'package:days_3/page/rating_page.dart';
+import 'package:days_3/router/routing_const.dart';
 import 'package:flutter/material.dart';
 
 class FavoritePage extends StatelessWidget {
@@ -51,7 +51,7 @@ class FavoritePage extends StatelessWidget {
             ),
             FlatButton(
               onPressed: (){
-                //TODO FORGOT PASSWORD SCREEN GOES HERE
+                    Navigator.pushNamed(context, MainRoute);
               },
               child: Text(
                 'Forgot Password',
@@ -65,8 +65,7 @@ class FavoritePage extends StatelessWidget {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => WorkPage()));
+                 Navigator.pushNamed(context,RegisterRoute);
                 },
                 child: Text(
                   'Login',

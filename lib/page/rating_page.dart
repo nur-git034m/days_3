@@ -1,3 +1,4 @@
+import 'package:days_3/page/auth_page.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -15,12 +16,6 @@ class _Work_pageState extends State<Work_page> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('WTF'),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
-          onPressed: () => Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => (WorkPage())))
-                
-        ),
       ),
       body: new Container(
         child: new SingleChildScrollView(
